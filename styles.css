@@ -1,0 +1,1074 @@
+/* =======================
+   Reset & Typography
+========================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    /* Keep a light sky-like base color overall */
+    background-color: #F0FCFF;
+    color: #333;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+  }
+  
+  /* =======================
+     Navbar
+  ========================= */
+/*************************************************
+  HEADER & NAVBAR (Two Rows)
+**************************************************/
+/*************************************************
+  HEADER & NAVBAR (Two-Row Layout)
+**************************************************/
+header {
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    /* If you prefer no shadow, remove the line above */
+  }
+  
+  /* === TOP ROW: Logo + Main Nav === */
+  .navbar-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.8rem 5%;
+  }
+  
+  /* LOGO */
+  .logo a {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #00A7CA; /* accent color */
+    text-decoration: none;
+  }
+  
+  /* MAIN NAV LINKS */
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    margin: 0; /* remove default ul margins */
+  }
+  
+  .nav-links li {
+    position: relative;
+  }
+  
+  .nav-links a {
+    color: #333;
+    text-decoration: none;
+    padding: 0.5rem 0.8rem;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .nav-links a:hover {
+    background-color: #00A7CA;
+    color: #fff;
+  }
+  
+  /* === BOTTOM ROW: Icons + Resume Button === */
+/* ========== BOTTOM ROW ========== */
+/* Navbar Bottom */
+.navbar-bottom {
+  background-color: #f8f8f8;
+  border-top: 1px solid #ddd;
+  padding: 0.8rem 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Icon Container */
+.nav-icons {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem; /* Adjusts space between items */
+}
+
+/* Icon Links */
+.nav-icons a {
+  color: #333;
+  font-size: 1.2rem;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem; /* Space between icon and text */
+  transition: color 0.3s ease;
+}
+
+.nav-icons a:hover {
+  color: #00A7CA;
+}
+
+/* Slim Download Resume Button */
+.resume-btn {
+  font-size: 0.85rem;
+  padding: 0.2rem 0.8rem;
+  color: #00A7CA;
+  background-color: transparent;
+  border: 1px solid #00A7CA;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.resume-btn:hover {
+  background-color: transparent;
+  color: #fff;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .navbar-bottom {
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+
+  .nav-icons a {
+    font-size: 1rem;
+  }
+}
+
+
+        
+  /* =======================
+     Home Section
+  ========================= */
+  .home-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem 5%;
+    /* NEW gradient: softer, lighter breezy look */
+    background: linear-gradient(135deg, #E2FAFF 0%, #F8FEFF 100%);
+    min-height: 70vh;
+    text-align: center;
+  }
+  
+  .home-content {
+    max-width: 700px;
+    animation: fadeInUp 1s ease forwards;
+    opacity: 0; /* Will fade in via keyframes */
+  }
+  
+  @keyframes fadeInUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+  }
+  
+  .home-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .home-content h1 span {
+    /* Accent color for your name */
+    color: #00A7CA;
+  }
+  
+  .home-content p {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    line-height: 1.5;
+  }
+  
+  .btn {
+    background-color: #00A7CA;
+    color: #fff;
+    padding: 0.8rem 1.2rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: #0090af;
+  }
+  
+  #typed-text {
+    color: #00A7CA;
+  }
+  /* Fade-out class */
+/* Blinking Cursor */
+#cursor {
+  display: inline-block;
+  font-weight: bold;
+  color: #00A7CA; /* use your accent color */
+  animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+  0%, 50% { opacity: 1; }
+  50.01%, 100% { opacity: 0; }
+}
+
+  /* =======================
+     About Section
+  ========================= */
+  .about-section {
+    padding: 3rem 5%;
+    background-color: #F0FCFF; /* Stays consistent with body */
+  }
+  
+  .about-container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .about-section h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    color: #00A7CA;
+  }
+  
+  /* Row for left photo(s) & right text side-by-side */
+  .about-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+  
+  .about-left {
+    flex: 1 1 300px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .about-photo {
+    max-width: 100%;
+    height: 90% !important;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  }
+  
+  .about-right {
+    flex: 2 1 400px; 
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .about-text p {
+    margin-bottom: 0.5rem;
+    line-height: 1.6;
+  }
+  
+  .contact-info p {
+    margin-bottom: 0.3rem;
+  }
+  
+  /* Misc achievements or extra activities */
+/* ======================
+   MISC SECTION (FLIP CARDS)
+====================== */
+.misc-section {
+    padding: 3rem 5%;
+    text-align: center;
+    background-color: #F0FCFF; /* or any distinct background */
+  }
+  
+  .misc-section h2 {
+    font-size: 2rem;
+    color: #00A7CA; /* accent color */
+    margin-bottom: 0.5rem;
+  }
+  
+  .misc-section p {
+    color: #666;
+    margin-bottom: 2rem;
+  }
+  
+  /* Flip Cards Container */
+  .flip-cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+  }
+  
+  /* Flip Card Wrapper */
+  .flip-card {
+    background-color: transparent;
+    width: 350px;
+    height: 150px; /* Adjust as needed */
+    perspective: 1000px; /* Enables 3D flip effect */
+  }
+  
+  /* Inner Container for the Front/Back */
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+  }
+  
+  /* Flip on hover */
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  /* Front/Back faces */
+  .flip-card-front,
+  .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden; /* prevents text from showing through */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    padding: 1rem;
+  }
+  
+  /* FRONT SIDE */
+  .flip-card-front {
+    background-color: #fff; /* or any color or gradient */
+    color: #00A7CA;
+  }
+  
+  /* BACK SIDE */
+  .flip-card-back {
+    background-color: #00A7CA; /* distinct color from front */
+    color: #fff;
+    transform: rotateY(180deg);
+    font-size: 0.9rem; /* reduce if text is too big for back side */
+  }
+  
+  /* Adjust front/back text styles */
+  .flip-card-front h3 {
+    font-size: 1.1rem;
+  }
+  
+  .flip-card-back p {
+    line-height: 1.4;
+  }
+  
+  /* Responsiveness: stack or resize on smaller devices */
+  @media (max-width: 768px) {
+    .flip-cards-container {
+      flex-direction: column;
+      align-items: center;
+    }
+    .flip-card {
+      width: 80%;
+      height: 180px; /* can adjust for more text space */
+      margin-bottom: 1rem;
+    }
+  }
+    
+  /* =======================
+     Projects Section
+  ========================= */
+/* Projects Section */
+.projects-cards-section {
+  padding: 3rem 5%;
+  text-align: center;
+  position: relative;
+}
+
+.projects-cards-section h2 {
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  color: #00A7CA;
+}
+
+
+/* Project Titles (h3) */
+/* Project Titles (h3) */
+.project-card h3 {
+  margin-top: 0; /* Remove extra space above the header */
+  margin-bottom: 0.5rem; /* Consistent spacing below the header */
+  text-align: center;
+  color: #00A7CA;
+  font-size: 1.2rem; /* Adjust header size */
+  line-height: 1.4; /* Ensure consistent spacing between lines */
+}
+
+/* Paragraph (p) Styles */
+.project-card p {
+  margin-top: 0; /* Remove extra space above the paragraph */
+  margin-bottom: 1rem; /* Space between paragraph and icon */
+  text-align: justify;
+  line-height: 1.6; /* Improve readability */
+  color: #333;
+}
+
+/* Each Project Card */
+.project-card {
+  flex: 0 0 calc(33.3% - 1rem); /* Fit 3 cards per row with gaps */
+  box-sizing: border-box;
+  padding: 1.5rem;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  text-align: left;
+  position: relative;
+  min-height: 350px; /* Adjust height to match content */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-right: 1rem; /* Space between cards */
+}
+
+/* Fix Card Visibility (First and Last Cards) */
+.cards-slider-container {
+  overflow: hidden;
+  padding: 0 1rem; /* Add padding to ensure first and last cards are visible */
+}
+
+.cards-slider-inner {
+  display: flex;
+  gap: 1rem;
+  transition: transform 0.5s ease-in-out;
+  will-change: transform;
+}
+
+/* Navigation Arrows */
+.cards-prev-btn, .cards-next-btn {
+  font-size: 2rem;
+  cursor: pointer;
+  color: #00A7CA;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 0.5rem 1rem;
+  border-radius: 50%;
+  transition: color 0.3s ease, background 0.3s ease;
+  z-index: 10;
+}
+
+.cards-prev-btn { left: 0.5rem; } /* Adjust for better visibility */
+.cards-next-btn { right: 0.5rem; } /* Adjust for better visibility */
+
+.cards-prev-btn:hover, .cards-next-btn:hover {
+  color: #007f9b;
+  background-color: rgba(255, 255, 255, 1);
+}
+
+/* URL Icon */
+.project-link {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  font-size: 1.5rem;
+  color: #00A7CA;
+  transition: color 0.3s ease;
+}
+
+.project-link:hover {
+  color: #007f9b;
+}
+
+/* Skills Section */
+/* Skills Section */
+.skills-section {
+  padding: 3rem 5%;
+  background-color: #f0fcff;
+  text-align: center;
+}
+
+.skills-section h2 {
+  font-size: 2rem;
+  color: #00a7ca;
+  margin-bottom: 1rem;
+}
+
+.skills-section p {
+  margin-bottom: 2rem;
+  color: #666;
+  font-size: 1.1rem;
+}
+
+/* Skills Container */
+.skills-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  justify-items: center;
+}
+
+/* Skill Card */
+.skills-card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skills-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Skills Header */
+.skills-header h3 {
+  font-size: 1.3rem;
+  color: #00a7ca;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+/* Skills Content */
+/* Skills Section */
+.skills-section {
+  padding: 3rem 5%;
+  background-color: #f0fcff;
+  text-align: center;
+}
+
+.skills-section h2 {
+  font-size: 2rem;
+  color: #00a7ca;
+  margin-bottom: 1rem;
+}
+
+.skills-section p {
+  margin-bottom: 2rem;
+  color: #666;
+  font-size: 1.1rem;
+}
+
+/* Skills Container */
+.skills-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  justify-items: center;
+}
+
+/* Skill Card */
+.skills-card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skills-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Skills Header */
+.skills-header h3 {
+  font-size: 1.3rem;
+  color: #00a7ca;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+/* Skills Content */
+.skills-content {
+  display: flex;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+
+.skills-content ul {
+  list-style-type: disc; /* Add bullets */
+  padding-left: 1rem; /* Space between bullets and text */
+}
+
+.skills-content li {
+  font-size: 0.95rem;
+  color: #333;
+  margin-bottom: 0.3rem;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .skills-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 576px) {
+  .skills-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+  /* =======================
+     Experience/Education Section
+  ========================= */
+/* General Section */
+.timeline-section {
+  padding: 3rem 5%;
+  background-color: #F0FCFF;
+  text-align: center;
+}
+
+/* Timeline Dot */
+
+.timeline-section h2 {
+  font-size: 2rem;
+  color: #00A7CA;
+  margin-bottom: 1rem;
+}
+/* TIMELINE DOT */
+.timeline-dot {
+  position: absolute;
+  left: 50%;  /* Ensures it stays in the center */
+  top: 50%;
+  width: 12px;
+  height: 12px;
+  background-color: #00A7CA; /* Accent color */
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+
+
+.timeline-section p {
+  margin-bottom: 2rem;
+  color: #666;
+  font-size: 1.1rem;
+}
+
+/* Tabs */
+.tabs {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.tab-btn {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 0.6rem 1rem;
+  cursor: pointer;
+  margin: 0 0.5rem;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.tab-btn:hover {
+  background-color: #F0FCFF;
+}
+
+.tab-btn.active {
+  background-color: #00A7CA;
+  color: #fff;
+  border: 1px solid #00A7CA;
+}
+
+/* Timeline */
+.timeline-container {
+  position: relative;
+  margin: 0 auto;
+  padding: 2rem 0;
+  max-width: 800px;
+  display: none;
+}
+
+.timeline-container.active {
+  display: block;
+}
+
+.timeline-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 4px;
+  background-color: #E0E0E0;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+.timeline-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 2rem;
+  position: relative;
+  width: 100%;
+}
+
+/* Alternating Cards: Left & Right */
+.timeline-item:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+/* Flip Cards */
+/* Flip Card Defaults */
+.flip-card {
+  perspective: 1000px;
+  position: relative;
+  width: 350px;
+  height: 150px;
+  transition: transform 0.6s ease, box-shadow 0.4s ease;
+}
+
+.flip-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Flip Card Inner */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s ease, scale 0.6s ease;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Right Side Flip */
+.flip-card-right:hover .flip-card-inner {
+  transform: rotateY(-180deg);
+}
+
+/* Flip Card Front */
+.flip-card-front {
+  background-color: #ffffff;
+  color: #333;
+  border-radius: 10px;
+  padding: 1rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Flip Card Back Default */
+.flip-card-back {
+  background-color: #E6F7FF;
+  color: #004A63;
+  transform: rotateY(180deg);
+  width: 320px;
+  height: 250px;
+  position: absolute;
+  left: -30px;
+  z-index: 10;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  padding: 1.2rem;
+  text-align: justify;
+  display: flex;
+  flex-direction: column; /* Ensures content flows properly */
+  justify-content: flex-start;
+}
+
+/* Make Responsibilities Heading Stand Alone */
+.flip-card-back h3 {
+  margin-bottom: 0.8rem;
+  text-align: left;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #0079A3;
+}
+
+/* Align Bulleted List Properly */
+.flip-card-back ul {
+  margin: 0;
+  padding-left: 1.5rem;
+  list-style-type: disc;
+}
+
+.flip-card-back li {
+  margin-bottom: 0.5rem;
+  text-align: left;
+  line-height: 1.6;
+}
+
+/* Adjust Individual Experience Card Sizes */
+
+/* King Machine */
+.flip-card-back-km {
+  width: 550px !important;
+  height: 350px !important;
+  transform: rotateY(180deg);
+  top:-30px !important;
+
+}
+
+/* UNC Charlotte */
+.flip-card-back-uncc {
+  width: 530px !important;
+  height: 410px !important;
+  left:-180px !important;
+  top: -100px !important
+
+}
+
+/* Juspay */
+.flip-card-back-juspay {
+  width: 540px !important;
+  height: 460px !important;
+  top:-100px !important;
+}
+
+/* Misplaced Minds */
+.flip-card-back-mm {
+  width: 530px !important;
+  height: 410px !important;
+  left:-180px !important;
+  bottom: -100px !important;
+  transform: rotateY(-180deg);
+}
+
+.flip-jntu {
+  height: 350px !important;
+}
+/* Disable flip for Education timeline items */
+#education .flip-card:hover .flip-card-inner,
+#education .flip-card-right:hover .flip-card-inner {
+  transform: none !important;
+}
+
+/* Hide the back side for Education cards so only the front is visible */
+#education .flip-card .flip-card-back {
+  display: none;
+}
+
+
+/* Responsive Fixes */
+@media (max-width: 768px) {
+  .flip-card-back {
+    width: 300px;
+    height: 270px;
+  }
+}
+
+/* Logos on Cards */
+.company-logo {
+  width: 150px;
+  height: 120px;
+  object-fit: contain;
+  margin-top: 5px;
+}
+
+.company-name {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #555;
+}
+
+.timeline-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.timeline-info i {
+  color: #00A7CA;
+}
+
+.timeline-info p {
+  margin: 0 !important;
+  color: #666;
+  font-size: 0.8rem !important;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .flip-card {
+    width: 200px;
+    height: 120px;
+  }
+
+  .flip-card-back {
+    width: 300px;
+    height: 270px;
+  }
+
+  .company-logo {
+    width: 40px;
+  }
+}
+
+  /* =======================
+     Contact Section
+  ========================= */
+  .contact-section {
+    padding: 3rem 5%;
+    background-color: #F0FCFF;
+    text-align: center;
+  }
+  
+  .contact-section h2 {
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+    color: #00A7CA;
+  }
+  
+  .contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .contact-form label {
+    font-weight: bold;
+    margin-bottom: 0.2rem;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+  }
+  
+  .contact-form button {
+    width: max-content;
+    align-self: flex-end;
+  }
+  
+  /* =======================
+     Footer
+  ========================= */
+  footer {
+    background-color: #f8fafa;
+    border-top: 1px solid #ddd;
+    padding: 1.5rem 5%;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #666;
+  }
+  
+  footer p {
+    margin-bottom: 0.5rem;
+    line-height: 1.4;
+  }
+  
+  /* Footer links or icons */
+  footer a {
+    color: #00A7CA;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  footer a:hover {
+    color: #007f9b;
+  }
+  
+  footer i {
+    margin-right: 0.25rem;
+  }
+    
+  .home-section {
+    background: linear-gradient(135deg, #E2FAFF 0%, #F8FEFF 100%) !important;
+  }
+  
+  .about-section {
+    background-color: #F0FCFF  !important;
+  }
+  
+  .projects-section {
+    background-color: #E7FBFE  !important;
+  }
+
+  /* Publications Section */
+/* Publications Section */
+.publications-section {
+  padding: 3rem 5%;
+  text-align: center;
+  background-color: #f0fcff; /* Light and breezy background */
+}
+
+/* Section Header */
+.publications-section h2 {
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  color: #00A7CA;
+}
+
+/* Single Large Card */
+.publication-card {
+  max-width: 800px; /* Adjust width for a large rectangular card */
+  margin: 0 auto; /* Center the card */
+  padding: 2rem; /* Increase padding for spacious content */
+  background-color: #fff; /* White background for contrast */
+  border-radius: 12px; /* Rounded corners */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  text-align: left; /* Align text to the left for readability */
+  line-height: 1.6; /* Improve paragraph spacing */
+  position: relative; /* Needed for the link positioning */
+}
+
+/* Card Header */
+.publication-card h3 {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  color: #00A7CA;
+  text-align: center; /* Center-align the title */
+  line-height: 1.4; /* Ensure proper spacing between header lines */
+}
+
+/* Card Content */
+.publication-card p {
+  margin-bottom: 1.5rem; /* Space below the paragraph */
+  text-align: justify; /* Justify text for clean alignment */
+  color: #333; /* Standard text color */
+}
+
+/* Link at the Bottom */
+.publication-link {
+  position: absolute;
+  bottom: 1.5rem; /* Position it slightly above the bottom */
+  right: 1.5rem; /* Align to the right */
+  font-size: 1.2rem; /* Slightly larger for visibility */
+  color: #00A7CA;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem; /* Space between text and icon */
+}
+
+.publication-link:hover {
+  color: #007f9b;
+}
+
+/* Adjustments for Responsiveness */
+@media (max-width: 768px) {
+  .publication-card {
+    padding: 1.5rem;
+    max-width: 90%; /* Adjust width for smaller screens */
+  }
+}

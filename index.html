@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dhanush Kumar's Portfolio</title>
+
+  <!-- Link to your CSS file -->
+  <link rel="stylesheet" href="styles.css" />
+  <!-- Optional Icon Library -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+  />
+</head>
+
+<body>
+  <!-- ========== NAVIGATION ========== -->
+  <header>
+    <!-- ========== TOP ROW: Logo + Main Nav ========== -->
+    <div class="navbar-top">
+      <!-- Logo -->
+      <div class="logo">
+        <a href="#home">MyPortfolio</a>
+      </div>
+  
+      <!-- Main Navigation -->
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#publications">Publications</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#exp-edu">Experience/Education</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  
+    <!-- ========== BOTTOM ROW: Icons + Resume Button ========== -->
+<!-- ========== BOTTOM ROW: Icons + Resume Button ========== -->
+<div class="navbar-bottom">
+  <div class="nav-icons">
+    <!-- GitHub -->
+    <a
+      href="https://github.com/Dhanush-adk"
+      target="_blank"
+      rel="noopener noreferrer"
+      title="GitHub"
+    >
+      <i class="fab fa-github"></i>
+    </a>
+
+    <!-- LinkedIn -->
+    <a
+      href="https://www.linkedin.com/in/a-dhanush-kumar-4919801a1/"
+      target="_blank"
+      rel="noopener noreferrer"
+      title="LinkedIn"
+    >
+      <i class="fab fa-linkedin"></i>
+    </a>
+
+    <!-- Email -->
+    <a
+      href="mailto:danthara@charlotte.edu"
+      target="_blank"
+      rel="noopener noreferrer"
+      title="Email"
+    >
+      <i class="fas fa-envelope"></i> danthara@charlotte.edu
+    </a>
+
+    <!-- Phone -->
+    <a
+      href="tel:+1 704-930-3938"
+      title="Phone"
+    >
+      <i class="fas fa-phone-alt"></i> +1 704-930-3938
+    </a>
+
+    <!-- Slim Download Resume Button -->
+    <a href="Dhanush_Kumar.pdf" class="resume-btn" download target="_blank" rel="noopener noreferrer">
+      Download Resume
+    </a>
+  </div>
+</div>
+
+    </header>
+      
+  <!-- ========== HOME SECTION ========== -->
+  <section id="home" class="home-section">
+    <div class="home-content">
+      <h1 style= "white-space: nowrap;">Hello, I’m <span>Dhanush Kumar Antharam</span></h1>
+      <h2>
+       I'm <span id="typed-text"></span><span id="cursor">|</span>
+      </h2>
+      
+      <p style="text-align: justify;">
+        Data Engineer, Data Analyst, and Software Developer based in the United States. With over two years of experience, I have worked on data automation, real-time analytics, and scalable system development for companies like Juspay Technologies and King Machine. My expertise spans Python, R, Golang, SQL, and cloud platforms like GCP and AWS, with a strong focus on workflow automation and AI-driven solutions. Passionate about data-driven innovation and optimization, I thrive on building efficient, intelligent systems that solve complex challenges
+      </p>
+            <a href="#about" class="btn">Learn More</a>
+    </div>
+  </section>
+
+  <!-- ========== ABOUT SECTION ========== -->
+  <section id="about" class="about-section">
+    <div class="about-container">
+      <h2>About Me</h2>
+
+      <div class="about-row">
+        <!-- LEFT: Photo (or small gallery) -->
+        <div class="about-left">
+          <img
+            src="boy.png"
+            alt="Your Name Photo"
+            class="about-photo"
+          />
+        </div>
+
+        <!-- RIGHT: About text, contact info -->
+        <div class="about-right">
+          <div class="about-text">
+            <p style="text-align: justify;">
+              Currently pursuing my Master’s in Computer Engineering at the University of North Carolina at Charlotte, I am a Software Engineer, Data Engineer, and Data Analyst with a strong background in data automation, AI-driven analytics, and cloud computing. With over two years of experience, I have worked extensively on real-time data processing, ETL pipeline development, and scalable system architecture across industries.
+
+Currently, I am working as an Engineering Intern at King Machine, where I am developing an automated file management system to streamline workflows, optimize storage, and integrate version control with Git, improving efficiency and reducing storage overhead.
+
+Previously, as a Senior Data Analyst at Juspay Technologies, I built and deployed an automated real-time data analysis system that reduced processing time by 98% and cut infrastructure costs by 80%. My expertise spans Python, R, Golang, SQL, and cloud platforms like GCP, AWS, and Docker, allowing me to develop high-performance, scalable data solutions.
+
+I have also worked as a Machine Learning Engineer, developing AI models for business analytics, real-time monitoring, and anomaly detection. My research on abnormal activity detection using deep learning was published in Springer Nature LNNS and presented at World S4 2021.
+
+Beyond work, I actively participate in hackathons, AI workshops, and coding competitions, always eager to solve complex data challenges and develop scalable, intelligent solutions. Passionate about software engineering, data engineering, and automation, I am constantly looking for opportunities to innovate, optimize workflows, and build intelligent systems.
+
+Explore my resume to learn more about my skills, achievements, and contributions, and let’s connect to discuss how I can bring data-driven innovation and engineering excellence to your team
+            </p>
+                      </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PROJECTS SECTION ========== -->
+<!-- ========== PROJECTS SECTION ========== -->
+<section id="projects" class="projects-cards-section">
+  <h2>Projects</h2>
+
+  <div class="cards-slider-container">
+    <!-- Left Arrow -->
+    <span class="cards-prev-btn">&#10094;</span>
+
+    <!-- Inner Slider -->
+    <div class="cards-slider-inner">
+      
+      <div class="project-card">
+        <h3>Multi-Processor Cache Coherence Simulation</h3>
+        <p>
+          In this project, a cache coherence protocol was developed for a four-processor system, each equipped with a 64KB Level-1 cache and a shared memory architecture. Both snooping and directory-based coherence mechanisms were implemented to ensure a 1-cycle latency for cache coherence operations. A key aspect of the system's design was the development of an optimized Bus Arbiter, which precisely managed access to the System MemBus, improving performance and communication efficiency. The project showcased expertise in C++ programming, algorithm design, and system-level architecture, demonstrating a deep understanding of memory consistency models and processor communication.
+
+        </p>
+        <a href="https://github.com/Dhanush-adk/cache-coherance" target="_blank" class="project-link">
+          <i class="fas fa-link"></i>
+        </a>
+      </div>
+
+      <div class="project-card">
+        <h3>Estimating Vehicle Speed on Roadways Using RNNs & Transformers</h3>
+        <p>
+          This project focused on real-time vehicle speed estimation using deep learning techniques, particularly RNNs, LSTMs, GRUs, and Transformers, to process video data. The model achieved 94.25% accuracy on the VS13 dataset and 78.62% on the I24_3D dataset using LSTMs, surpassing other traditional approaches. The Transformer-based architecture demonstrated superior performance by effectively handling long-term dependencies, achieving 90% accuracy. Root Mean Square Error (RMSE) was minimized to 3.96 for VS13 and 10.99 for I24_3D, ensuring precise speed estimation. The system was designed to be scalable and non-intrusive, leveraging existing video surveillance infrastructure for real-world traffic monitoring applications.
+
+        </p>
+        <a href="https://github.com/Dhanush-adk/vehicle-speed-estimation/blob/main/RTML_Final_Report.pdf" target="_blank" class="project-link">
+          <i class="fas fa-link"></i>
+        </a>
+      </div>
+
+      <div class="project-card">
+        <h3>Navigating Uncertainty: Adaptive Decision-Making</h3>
+        <p>
+          This research-driven project explored adaptive decision-making techniques using First-Visit Monte Carlo, Semi-Gradient Temporal Difference (TD), and Deep Q-Networks (DQN). The implemented models optimized resource management and goal navigation strategies, focusing on balancing reward maximization with efficient resource utilization. Policies were strategically designed to subtly guide AI decision-making, creating an illusion of efficiency while masking the true underlying objectives. The project demonstrated a strong foundation in reinforcement learning, policy optimization, and real-time decision-making under uncertainty.
+
+        </p>
+        <a href="https://github.com/Dhanush-adk/reinforcement_learning/blob/main/Final%20Report.pdf" target="_blank" class="project-link">
+          <i class="fas fa-link"></i>
+        </a>
+      </div>
+
+      <div class="project-card">
+        <h3>Abnormal Activity Detection Using Deep Learning</h3>
+        <p>
+          A deep learning-based anomaly detection system was developed using Spatio-Temporal Autoencoders and C3D feature extraction techniques to identify unusual activities in video sequences. The model achieved a notable 78% accuracy in detecting anomalies, improving the efficiency of feature extraction for event classification. Performance was evaluated through precision, recall, and F1-score, ensuring robust anomaly detection capabilities. The findings were presented at the World S4 2021 Conference, and a research paper detailing the methodology and results was published, highlighting its implications for real-world surveillance applications.
+
+        </p>
+        <a href="https://link.springer.com/chapter/10.1007/978-981-16-6309-3_63" target="_blank" class="project-link">
+          <i class="fas fa-link"></i>
+        </a>
+      </div>
+
+      <div class="project-card">
+        <h3>Age Group Prediction from Voice Data
+        </h3>
+        <p>
+          This project involved age classification using voice data by leveraging both classical machine learning and deep learning techniques. A feature extraction process was implemented, yielding 23 features for traditional ML models, such as Logistic Regression, Support Vector Classification (SVC), and k-Nearest Neighbors (KNN), while neural networks (FNN, CNN) utilized 191 extracted features. The comparative analysis of classical and deep learning models was conducted using accuracy, precision, and recall metrics, providing valuable insights into the effectiveness of different modeling approaches for age prediction based on vocal characteristics.
+        </p>
+        <a href="https://github.com/Dhanush-adk/ITCS-5156_Project/blob/main/final_report_app_ml-1.pdf" target="_blank" class="project-link">
+          <i class="fas fa-link"></i>
+        </a>
+      </div>
+      <div class="project-card">
+        <h3>Self-Driving Car Using Computer Vision and Raspberry Pi</h3>
+        <p>
+          A computer vision-based autonomous navigation system was designed for real-time lane detection and curve tracking. The system employed edge detection, perspective transformation, and polynomial fitting techniques to enhance lane-following precision. A Raspberry Pi with an integrated camera was used for real-time road navigation, enabling seamless integration into embedded systems. The model was optimized for adaptability to various road conditions, ensuring robust autonomous driving capabilities with improved accuracy and responsiveness.
+        </p>
+        <a href="https://github.com/Dhanush-adk/self-driving-car-report/blob/main/selfdrivingcar_final.pdf" target="_blank" class="project-link">
+          <i class="fas fa-link"></i>
+        </a>
+      </div>
+      <div class="project-card">
+        <h3> Job Aggregator Tool Using Selenium</h3>
+        <p>
+          A web-based job aggregation tool was developed to compile job listings from platforms such as LinkedIn, Naukri, and Indeed based on user-defined criteria. The tool utilized web scraping techniques to extract relevant job details, including title, company, location, and application links. A RESTful API was implemented using Flask to manage user queries efficiently and deliver formatted job results. Error-handling mechanisms were incorporated to ensure reliability and robust performance. The application was successfully deployed on Heroku, providing scalability and high availability. Additionally, a user-friendly interface was designed for seamless navigation and effective job search filtering.
+        </p>
+        <a href="https://github.com/Dhanush-30/webscraping3/blob/master/script.py" target="_blank" class="project-link">
+          <i class="fas fa-link"></i>
+        </a>
+      </div>
+
+
+      <div class="project-card">
+        <h3>Menu Scraper Usig Selenium </h3>
+        <p>
+          This project involved developing a web scraping tool using Selenium to extract restaurant menus from platforms such as Swiggy and Zomato. The scraped data was cleaned and structured for easy analysis, with location-based filtering options integrated to assist users in identifying restaurants that met their specific preferences. The scraper was optimized to adapt to website layout changes, ensuring consistent and reliable performance. Additionally, data export options (e.g., CSV) were implemented for external analysis and business insights.
+
+        </p>
+      </div>
+      <div class="project-card">
+        <h3>Spam Detection System Using Sentiment Analysis</h3>
+        <p>
+          As part of an academic internship project, a spam detection system was developed using sentiment analysis techniques to identify negative reviews within a dataset. The system provided business analysts with valuable insights to enhance customer engagement and revenue optimization. The project involved natural language processing (NLP) techniques, text classification, and sentiment analysis, showcasing expertise in extracting meaningful patterns from textual data.
+        </p>
+      </div>
+      <div class="project-card">
+        <h3> Line-Following Robot Using Arduino and IR Sensors</h3>
+        <p>
+          A line-following robotic system was designed and implemented using an Arduino Uno microcontroller and infrared (IR) sensors. The robot autonomously navigated predefined paths by detecting and following line patterns, making it applicable for industrial automation and railway systems. The project demonstrated proficiency in embedded systems, sensor integration, and real-time control algorithms, contributing to the development of efficient automated navigation solutions.
+        </p>
+      </div>
+    </div> <!-- .cards-slider-inner -->
+
+    <!-- Right Arrow -->
+    <span class="cards-next-btn">&#10095;</span>
+  </div>
+</section>
+
+  <!-- ========== PUBLICATIONS SECTION (NEW) ========== -->
+  <section id="publications" class="publications-section">
+    <h2>Publications</h2>
+    <div class="publication-card">
+      <h3>Abnormal Activity Detection Using Deep Learning</h3>
+      <p>
+        This research, published in the Springer Nature LNNS series (5th International Conference, World S4 2021), explores Spatio-Temporal Autoencoders and C3D feature extraction techniques for anomaly detection in video sequences, achieving 78% accuracy. The system automates surveillance by identifying incidents such as accidents, burglaries, and explosions. A 3D CNN-based autoencoder reconstructed frames with minimal loss (8%) and 71% accuracy, while C3D feature extraction further improved detection performance. Designed for real-time monitoring, this model integrates with CCTV cameras in banks, roads, and crowded areas to enhance security and reduce manual workload.
+      </p>
+      <a href="https://link.springer.com/chapter/10.1007/978-981-16-6309-3_63" target="_blank" class="publication-link">
+        <i class="fas fa-link"></i> View Publication
+      </a>
+    </div>
+  </section>
+    
+<!-- ========== SKILLS SECTION ========== -->
+<section id="skills" class="skills-section">
+  <h2>Skills</h2>
+  <p>My Technical Proficiencies Across Categories</p>
+
+  <div class="skills-container">
+    <!-- Card 1: Programming Languages & Databases -->
+    <div class="skills-card">
+      <div class="skills-header">
+        <h3>Programming Languages & Databases</h3>
+      </div>
+      <div class="skills-content">
+        <ul>
+          <li>R</li>
+          <li>Python</li>
+          <li>Golang</li>
+          <li>JavaScript</li>
+          <li>HTML</li>
+        </ul>
+        <ul>
+          <li>PostgreSQL</li>
+          <li>BigQuery</li>
+          <li>Clickhouse</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Card 2: Tools -->
+    <div class="skills-card">
+      <div class="skills-header">
+        <h3>Tools</h3>
+      </div>
+      <div class="skills-content">
+        <ul>
+          <li>Docker</li>
+          <li>Jenkins</li>
+          <li>RStudio</li>
+          <li>Jupyter Notebook</li>
+        </ul>
+        <ul>
+          <li>Visual Studio Code</li>
+          <li>Git</li>
+          <li>Bitbucket</li>
+        </ul>
+      </div>
+    </div>
+
+        <!-- Card 3: Core Competencies -->
+        <div class="skills-card">
+          <div class="skills-header">
+            <h3>Core Competencies</h3>
+          </div>
+          <div class="skills-content">
+            <ul>
+              <li>Data Analysis</li>
+              <li>Machine Learning (scikit-learn, etc.)</li>
+              <li>Deep Learning (PyTorch, TensorFlow)</li>
+              <li>Web Scraping (Selenium)</li>
+            </ul>
+            <ul>
+              <li>SQL</li>
+              <li>Containerization (Docker)</li>
+              <li>CI/CD Pipelines (Jenkins)</li>
+              <li>Agile SDLC</li>
+            </ul>
+          </div>
+        </div>
+
+    <!-- Card 4: Other Skills -->
+    <div class="skills-card">
+      <div class="skills-header">
+        <h3>Other Skills</h3>
+      </div>
+      <div class="skills-content">
+        <ul>
+          <li>REST API Development</li>
+          <li>Containerization</li>
+          <li>CI/CD</li>
+          <li>Power BI</li>
+        </ul>
+        <ul>
+          <li>Tableau</li>
+          <li>Linux</li>
+          <li>Windows</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+
+</section>
+
+      
+  <!-- ========== EXPERIENCE & EDUCATION SECTION ========== -->
+  <section id="exp-edu" class="timeline-section">
+    <h2>Experience & Education</h2>
+    <p>My Professional & Academic Journey</p>
+  
+    <!-- Toggle Buttons -->
+    <div class="tabs">
+      <button class="tab-btn active" data-target="experience">Experience</button>
+      <button class="tab-btn" data-target="education">Education</button>
+    </div>
+  
+    <!-- Experience Timeline -->
+    <div id="experience" class="timeline-container active">
+      <!-- King Machine (Most Recent - Left) -->
+       <!-- King Machine (Most Recent - Left) -->
+<div class="timeline-item">
+  <div class="timeline-dot"></div>
+  <div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <h3>Engineering Intern</h3>
+        <img src="king-machine-logo.png" alt="King Machine Logo" class="company-logo" />
+
+        <div class="timeline-info">
+          <i class="fas fa-calendar-alt"></i>
+          <p>Jan 2025 – Present</p>
+        </div>
+
+      </div>
+      <div class="flip-card-back flip-card-back-km">
+        <h3>Responsibilities</h3>
+        <ul>
+            <li>Currently interning at <strong>King Machine</strong>, where I am developing an <strong>automated file management system</strong> using <strong>Python</strong> to streamline organizational workflows and optimize memory usage, reducing storage requirements (e.g., cutting 1TB of excess data).</li>
+            <li>The system also automates <strong>notifications</strong>, minimizing manual effort for employees and improving overall efficiency.</li>
+            <li>Integrating the workflow with <strong>Git</strong>, using a bare repository for seamless version control.</li>
+            <li>This project aims to enhance both <strong>operational productivity and data management</strong>, focusing on scalable solutions for better workflow automation and memory optimization.</li>
+          </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- UNC Charlotte (Right Side) -->
+<div class="timeline-item">
+  <div class="timeline-dot"></div>
+  <div class="flip-card flip-card-right">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <h3>Engineering Intern</h3>
+        <img src="uncc_logo.png" alt="UNC Logo" class="company-logo" />
+
+        <div class="timeline-info">
+          <i class="fas fa-calendar-alt"></i>
+          <p>Oct 2023 – Jan 2025</p>
+        </div>
+
+      </div>
+      <div class="flip-card-back flip-card-back-uncc">
+        <h3>Responsibilities</h3>
+        <ul>
+          <li>Developed a commissioning application using <strong>R Shiny</strong> for the front end and <strong>MongoDB</strong> for the backend, deploying it on <strong>shinyapps.io</strong> to enhance operational efficiency.</li>
+          <li>Followed the <strong>Agile SDLC methodology</strong>, ensuring iterative progress through regular feedback and continuous improvements.</li>
+          <li>Implemented <strong>interactive features and real-time data management</strong> to streamline commissioning tasks and enhance user experience.</li>
+          <li>Analyzed and optimized the utilization of <strong>facilities equipment</strong> such as <strong>boilers, coolers, and AHUs</strong>, contributing to improved resource management.</li>
+          <li>Leveraged <strong>HTML, CSS, JavaScript, and R Shiny</strong> to develop a cost-effective solution, <strong>reducing operational costs by 50%</strong>.</li>
+              </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Juspay (Left Side) -->
+<div class="timeline-item">
+  <div class="timeline-dot"></div>
+  <div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <h3>Senior Data Analyst</h3>
+        <img src="juspay-full-logo.svg" alt="Juspay Logo" class="company-logo" />
+        <div class="timeline-info">
+          <i class="fas fa-calendar-alt"></i>
+          <p>Jan 2022 – Jun 2023</p>
+        </div>
+      </div>
+      <div class="flip-card-back flip-card-back-juspay">
+        <h3>Responsibilities</h3>
+        <ul>
+          <li>Developed an <strong>automated real-time data analysis system</strong> using <strong>R, BigQuery (GCP), and ClickHouse</strong>, reducing analysis time and incorporating <strong>Intelligent Dynamic Recommendations</strong>.</li>
+          <li>Implemented customized <strong>alerts and reports</strong> sent via <strong>Slack and email</strong> to enhance monitoring and decision-making.</li>
+          <li>Designed and implemented <strong>ETL pipelines</strong> for seamless daily updates to <strong>BigQuery</strong>.</li>
+          <li>Developed a <strong>Golang-based server</strong> using the <strong>Echo framework</strong> to automate R and Python processes efficiently.</li>
+          <li>Deployed by containerizing the solution using <strong>Docker, Jenkins, GCP, and AWS ECR</strong> for scalability and streamlined deployment.</li>
+          <li>Integrated a <strong>Process Tracker</strong> for scheduled tasks, automated email reporting, and backend issue resolution alerts.</li>
+          <li>Optimized infrastructure efficiency, achieving an <strong>80% reduction in infrastructure costs</strong>.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Misplaced Minds (Last Role - Right) -->
+<div class="timeline-item">
+  <div class="timeline-dot"></div>
+  <div class="flip-card flip-card-right">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <h3>Machine Learning Engineer</h3>
+        <img src="h-logo-dark.png" alt="Misplaced Minds Logo" class="company-logo" />
+        <div class="timeline-info">
+          <i class="fas fa-calendar-alt"></i>
+          <p>Jul 2021 – Dec 2021</p>
+        </div>
+
+      </div>
+      <div class="flip-card-back flip-card-back-mm">
+        <h3>Responsibilities</h3>
+        <ul>
+          <li>Developed a <strong>Business Genie model</strong> using <strong>Computer Vision and Deep Learning</strong>, achieving <strong>81% accuracy</strong> in real-time employee and customer movement tracking, including person tracking and automated entry-exit record updates in the store's database.</li>
+          <li>Deployed the model as part of a <strong>Django application</strong> on <strong>AWS Lambda</strong>, reducing processing time by <strong>40%</strong> and ensuring scalable, efficient cloud-based operations.</li>
+          <li>Developed a <strong>customer hotspot identification model</strong>, enhancing the accuracy of engagement zone detection and optimizing store layout based on foot traffic analysis.</li>
+          <li>Designed a <strong>Deep Learning model for skin cancer detection</strong> with <strong>83% accuracy</strong>, contributing to AI-driven healthcare solutions for early diagnosis and improved patient care.</li>
+       </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+    </div>
+  
+    <!-- Education Timeline -->
+    <div id="education" class="timeline-container">
+      <!-- UNC Charlotte (Right Flip) -->
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="flip-card flip-card-right">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <h3>Master’s in Computer Engineering</h3>
+              <img src="uncc_logo.png" alt="UNC Logo" class="company-logo" />
+              <div class="timeline-info">
+                <i class="fas fa-calendar-alt"></i>
+                <p>Aug 2023 – May 2025</p>
+              </div>
+      
+            </div>
+            <!-- <div class="flip-card-back">
+              <h3>Key Learnings:</h3>
+              <p>Specializing in <strong>Data Engineering, Machine Learning, and Distributed Systems</strong>.</p>
+            </div> -->
+          </div>
+        </div>
+      </div>
+  
+      <!-- JNTU Hyderabad (Normal Flip) -->
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="flip-card flip-jntu">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <h3>Bachelor’s in Electronics & Communication Engineering</h3>
+              <img src="jntuh-logo.png" alt="JNTU Logo" class="company-logo" />
+              <h4>JNTU Hyderabad</h4>
+              <div class="timeline-info">
+                <i class="fas fa-calendar-alt"></i>
+                <p>Jul 2017 – Aug 2021</p>
+              </div>
+
+            </div>
+            <!-- <div class="flip-card-back">
+              <h3>Key Learnings:</h3>
+              <p>Focused on <strong>Embedded Systems, Digital Electronics, and Communication Technologies</strong>.</p>
+            </div> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+          <!-- ========== CONTACT SECTION ========== -->
+          <section id="contact" class="contact-section">
+            <h2>Contact</h2>
+            <p>Let’s work together! Fill out the form below with your project idea.</p>
+            <form class="contact-form" id="contactForm" action="https://formspree.io/f/mgvozblj" method="POST">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="Write your name..." required />
+          
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="Write your email..." required />
+          
+              <label for="project">Project</label>
+              <textarea id="project" name="project" rows="4" placeholder="Write your project idea..." required></textarea>
+          
+              <button type="submit" class="btn">
+                Send Message <i class="fas fa-paper-plane"></i>
+              </button>
+            </form>
+            <div id="responseMessage" style="display: none; margin-top: 10px;"></div>
+          </section>
+          
+  <!-- ========== FOOTER ========== -->
+<!-- ========== FOOTER ========== -->
+<footer>
+    <p>&copy; 2025 A Dhanush Kumar. All rights reserved.</p>
+    <p>
+      Follow me on:
+      <a href="https://github.com/Dhanush-adk" target="_blank" rel="noopener noreferrer">
+        <i class="fab fa-github"></i> GitHub
+      </a> |
+      <a href="https://linkedin.com/in/a-dhanush-kumar-4919801a1" target="_blank" rel="noopener noreferrer">
+        <i class="fab fa-linkedin"></i> LinkedIn
+      </a>
+    </p>
+  </footer>
+  
+  <!-- Main Script for Carousel & Tabs (example) -->
+  <script src="script.js"></script>
+</body>
+</html>
